@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка погоды</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+            font-size: 2.5em;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #004d40;
+        }
+        .form-group input {
+            width: calc(100% - 24px);
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid #00796b;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus {
+            border-color: #004d40;
+            outline: none;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background-color: #00796b;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #004d40;
+        }
+        .result {
+            margin-top: 40px;
+        }
+        .result h2 {
+            color: #00796b;
+        }
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Проверка погоды</h1>
+    <form method="POST" action="/check-weather">
+        <div class="form-group">
+            <label for="start">Начальный город:</label>
+            <input type="text" id="start" name="start" required placeholder="Введите название города...">
+        </div>
+        <div class="form-group">
+            <label for="end">Конечный город:</label>
+            <input type="text" id="end" name="end" required placeholder="Введите название города...">
+        </div>
+        <div class="form-group">
+            <button type="submit">Проверить погоду</button>
+        </div>
+    </form>
+
+    {% if error %}
+    <div class="error">
+        <p>{{ error }}</p>
+    </div>
+    {% endif %}
+
+    {% if result %}
+    <div class="result">
+        <h2>Результаты:</h2>
+
+        {% for city in [result.start, result.end] %}
+          <h3>{{ city.city }}:</h3>
+          <p><strong>Координаты:</strong> {{ city.coordinates }}</p>
+          <p><strong>Температура:</strong> {{ city.weather.temperature }}°C</p>
+          <p><strong>Влажность:</strong> {{ city.weather.humidity }}%</p>
+          <p><strong>Скорость ветра:</strong> {{ city.weather.wind_speed }} км/ч</p>
+          <p><strong>Вероятность осадков:</strong> {{ city.weather.precipitation_probability }}%</p>
+          <p><strong>Плохая погода:</strong> {{ 'Да' if city.is_bad_weather else 'Нет' }}</p>
+          <hr />
+        {% endfor %}
+
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>

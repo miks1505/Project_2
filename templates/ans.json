@@ -1,0 +1,354 @@
+{
+  'Headline': {
+    'EffectiveDate': '2024-12-11T13:00:00+05:00',
+    'EffectiveEpochDate': 1733904000,
+    'Severity': 4,
+    'Text': 'Среда, день - Среда, вечер: 1–2 см снега',
+    'Category': 'snow',
+    'EndDate': '2024-12-12T01:00:00+05:00',
+    'EndEpochDate': 1733947200,
+    'MobileLink': 'http://www.accuweather.com/ru/ru/perm/294922/daily-weather-forecast/294922?unit=c',
+    'Link': 'http://www.accuweather.com/ru/ru/perm/294922/daily-weather-forecast/294922?unit=c'
+  },
+  'DailyForecasts': [
+    {
+      'Date': '2024-12-10T07:00:00+05:00',
+      'EpochDate': 1733796000,
+      'Sun': {
+        'Rise': '2024-12-10T09:50:00+05:00',
+        'EpochRise': 1733806200,
+        'Set': '2024-12-10T16:26:00+05:00',
+        'EpochSet': 1733829960
+      },
+      'Moon': {
+        'Rise': '2024-12-10T14:05:00+05:00',
+        'EpochRise': 1733821500,
+        'Set': '2024-12-11T04:04:00+05:00',
+        'EpochSet': 1733871840,
+        'Phase': 'WaxingGibbous',
+        'Age': 9
+      },
+      'Temperature': {
+        'Minimum': {
+          'Value': -6.1,
+          'Unit': 'C',
+          'UnitType': 17
+        },
+        'Maximum': {
+          'Value': -5.0,
+          'Unit': 'C',
+          'UnitType': 17
+        }
+      },
+      'RealFeelTemperature': {
+        'Minimum': {
+          'Value': -17.1,
+          'Unit': 'C',
+          'UnitType': 17,
+          'Phrase': 'Ужасный холод'
+        },
+        'Maximum': {
+          'Value': -11.2,
+          'Unit': 'C',
+          'UnitType': 17,
+          'Phrase': 'Очень холодно'
+        }
+      },
+      'RealFeelTemperatureShade': {
+        'Minimum': {
+          'Value': -17.1,
+          'Unit': 'C',
+          'UnitType': 17,
+          'Phrase': 'Ужасный холод'
+        },
+        'Maximum': {
+          'Value': -11.2,
+          'Unit': 'C',
+          'UnitType': 17,
+          'Phrase': 'Очень холодно'
+        }
+      },
+      'HoursOfSun': 1.6,
+      'DegreeDaySummary': {
+        'Heating': {
+          'Value': 24.0,
+          'Unit': 'C',
+          'UnitType': 17
+        },
+        'Cooling': {
+          'Value': 0.0,
+          'Unit': 'C',
+          'UnitType': 17
+        }
+      },
+      'AirAndPollen': [
+        {
+          'Name': 'AirQuality',
+          'Value': 0,
+          'Category': 'Хорошая',
+          'CategoryValue': 1,
+          'Type': 'Озон'
+        },
+        {
+          'Name': 'Grass',
+          'Value': 0,
+          'Category': 'Хорошая',
+          'CategoryValue': 1
+        },
+        {
+          'Name': 'Mold',
+          'Value': 0,
+          'Category': 'Хорошая',
+          'CategoryValue': 1
+        },
+        {
+          'Name': 'Ragweed',
+          'Value': 0,
+          'Category': 'Хорошая',
+          'CategoryValue': 1
+        },
+        {
+          'Name': 'Tree',
+          'Value': 0,
+          'Category': 'Хорошая',
+          'CategoryValue': 1
+        },
+        {
+          'Name': 'UVIndex',
+          'Value': 0,
+          'Category': 'Хорошая',
+          'CategoryValue': 1
+        }
+      ],
+      'Day': {
+        'Icon': 22,
+        'IconPhrase': 'Снег',
+        'HasPrecipitation': True,
+        'PrecipitationType': 'Snow',
+        'PrecipitationIntensity': 'Light',
+        'ShortPhrase': 'Небольшой снег',
+        'LongPhrase': 'Небольшой снег',
+        'PrecipitationProbability': 96,
+        'ThunderstormProbability': 0,
+        'RainProbability': 0,
+        'SnowProbability': 96,
+        'IceProbability': 0,
+        'Wind': {
+          'Speed': {
+            'Value': 18.5,
+            'Unit': 'km/h',
+            'UnitType': 7
+          },
+          'Direction': {
+            'Degrees': 288,
+            'Localized': 'ЗСЗ',
+            'English': 'WNW'
+          }
+        },
+        'WindGust': {
+          'Speed': {
+            'Value': 24.1,
+            'Unit': 'km/h',
+            'UnitType': 7
+          },
+          'Direction': {
+            'Degrees': 280,
+            'Localized': 'З',
+            'English': 'W'
+          }
+        },
+        'TotalLiquid': {
+          'Value': 5.6,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'Rain': {
+          'Value': 0.0,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'Snow': {
+          'Value': 3.76,
+          'Unit': 'cm',
+          'UnitType': 4
+        },
+        'Ice': {
+          'Value': 0.0,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'HoursOfPrecipitation': 10.0,
+        'HoursOfRain': 0.0,
+        'HoursOfSnow': 10.0,
+        'HoursOfIce': 0.0,
+        'CloudCover': 80,
+        'Evapotranspiration': {
+          'Value': 0.3,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'SolarIrradiance': {
+          'Value': 305.2,
+          'Unit': 'W/m²',
+          'UnitType': 33
+        },
+        'RelativeHumidity': {
+          'Minimum': 75,
+          'Maximum': 88,
+          'Average': 81
+        },
+        'WetBulbTemperature': {
+          'Minimum': {
+            'Value': -6.5,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Maximum': {
+            'Value': -5.6,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Average': {
+            'Value': -5.9,
+            'Unit': 'C',
+            'UnitType': 17
+          }
+        },
+        'WetBulbGlobeTemperature': {
+          'Minimum': {
+            'Value': -6.1,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Maximum': {
+            'Value': -5.0,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Average': {
+            'Value': -5.3,
+            'Unit': 'C',
+            'UnitType': 17
+          }
+        }
+      },
+      'Night': {
+        'Icon': 22,
+        'IconPhrase': 'Снег',
+        'HasPrecipitation': True,
+        'PrecipitationType': 'Snow',
+        'PrecipitationIntensity': 'Light',
+        'ShortPhrase': 'Временами снег',
+        'LongPhrase': 'Временами снег',
+        'PrecipitationProbability': 76,
+        'ThunderstormProbability': 0,
+        'RainProbability': 0,
+        'SnowProbability': 76,
+        'IceProbability': 0,
+        'Wind': {
+          'Speed': {
+            'Value': 16.7,
+            'Unit': 'km/h',
+            'UnitType': 7
+          },
+          'Direction': {
+            'Degrees': 254,
+            'Localized': 'ЗЮЗ',
+            'English': 'WSW'
+          }
+        },
+        'WindGust': {
+          'Speed': {
+            'Value': 29.6,
+            'Unit': 'km/h',
+            'UnitType': 7
+          },
+          'Direction': {
+            'Degrees': 240,
+            'Localized': 'ЗЮЗ',
+            'English': 'WSW'
+          }
+        },
+        'TotalLiquid': {
+          'Value': 1.0,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'Rain': {
+          'Value': 0.0,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'Snow': {
+          'Value': 1.35,
+          'Unit': 'cm',
+          'UnitType': 4
+        },
+        'Ice': {
+          'Value': 0.0,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'HoursOfPrecipitation': 3.0,
+        'HoursOfRain': 0.0,
+        'HoursOfSnow': 3.0,
+        'HoursOfIce': 0.0,
+        'CloudCover': 95,
+        'Evapotranspiration': {
+          'Value': 0.0,
+          'Unit': 'mm',
+          'UnitType': 3
+        },
+        'SolarIrradiance': {
+          'Value': 0.0,
+          'Unit': 'W/m²',
+          'UnitType': 33
+        },
+        'RelativeHumidity': {
+          'Minimum': 83,
+          'Maximum': 88,
+          'Average': 85
+        },
+        'WetBulbTemperature': {
+          'Minimum': {
+            'Value': -6.5,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Maximum': {
+            'Value': -5.3,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Average': {
+            'Value': -6.1,
+            'Unit': 'C',
+            'UnitType': 17
+          }
+        },
+        'WetBulbGlobeTemperature': {
+          'Minimum': {
+            'Value': -6.1,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Maximum': {
+            'Value': -4.8,
+            'Unit': 'C',
+            'UnitType': 17
+          },
+          'Average': {
+            'Value': -5.5,
+            'Unit': 'C',
+            'UnitType': 17
+          }
+        }
+      },
+      'Sources': [
+        'AccuWeather'
+      ],
+      'MobileLink': 'http://www.accuweather.com/ru/ru/perm/294922/daily-weather-forecast/294922?day=1&unit=c',
+      'Link': 'http://www.accuweather.com/ru/ru/perm/294922/daily-weather-forecast/294922?day=1&unit=c'
+    }
+  ]
+}
